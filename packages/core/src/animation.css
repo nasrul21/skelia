@@ -1,0 +1,117 @@
+.sk-shimmer .sk-box,
+.sk-shimmer .sk-line,
+.sk-shimmer .sk-circle,
+.sk-shimmer .sk-avatar,
+.sk-shimmer .sk-image,
+.sk-shimmer .sk-button,
+.sk-shimmer .sk-badge,
+.sk-shimmer .sk-icon {
+  background-image: linear-gradient(
+    90deg,
+    var(--sk-color) 0%,
+    var(--sk-highlight) 50%,
+    var(--sk-color) 100%
+  );
+  background-size: 200% 100%;
+  animation: sk-shimmer var(--sk-duration) infinite linear;
+}
+
+@keyframes sk-shimmer {
+  from {
+    background-position: 200% 0;
+  }
+
+  to {
+    background-position: -200% 0;
+  }
+}
+
+.sk-pulse .sk-box,
+.sk-pulse .sk-line,
+.sk-pulse .sk-circle,
+.sk-pulse .sk-avatar,
+.sk-pulse .sk-image,
+.sk-pulse .sk-button,
+.sk-pulse .sk-badge,
+.sk-pulse .sk-icon {
+  animation: sk-pulse var(--sk-duration) ease-in-out infinite;
+}
+
+@keyframes sk-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.55;
+  }
+}
+
+.sk-wave .sk-box,
+.sk-wave .sk-line,
+.sk-wave .sk-circle,
+.sk-wave .sk-avatar,
+.sk-wave .sk-image,
+.sk-wave .sk-button,
+.sk-wave .sk-badge,
+.sk-wave .sk-icon {
+  animation: sk-wave var(--sk-duration) ease-in-out infinite;
+}
+
+@keyframes sk-wave {
+  0% {
+    transform: scaleX(1);
+    opacity: 0.75;
+  }
+
+  50% {
+    transform: scaleX(0.98);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scaleX(1);
+    opacity: 0.75;
+  }
+}
+
+.sk-none .sk-box,
+.sk-none .sk-line,
+.sk-none .sk-circle,
+.sk-none .sk-avatar,
+.sk-none .sk-image,
+.sk-none .sk-button,
+.sk-none .sk-badge,
+.sk-none .sk-icon {
+  animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sk-shimmer .sk-box,
+  .sk-shimmer .sk-line,
+  .sk-shimmer .sk-circle,
+  .sk-shimmer .sk-avatar,
+  .sk-shimmer .sk-image,
+  .sk-shimmer .sk-button,
+  .sk-shimmer .sk-badge,
+  .sk-shimmer .sk-icon,
+  .sk-pulse .sk-box,
+  .sk-pulse .sk-line,
+  .sk-pulse .sk-circle,
+  .sk-pulse .sk-avatar,
+  .sk-pulse .sk-image,
+  .sk-pulse .sk-button,
+  .sk-pulse .sk-badge,
+  .sk-pulse .sk-icon,
+  .sk-wave .sk-box,
+  .sk-wave .sk-line,
+  .sk-wave .sk-circle,
+  .sk-wave .sk-avatar,
+  .sk-wave .sk-image,
+  .sk-wave .sk-button,
+  .sk-wave .sk-badge,
+  .sk-wave .sk-icon {
+    animation: none;
+  }
+}

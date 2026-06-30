@@ -1,0 +1,45 @@
+{
+  "name": "skelia",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "docs"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present",
+    "docs:dev": "npm run dev -w @skelia/docs",
+    "docs:build": "npm run build -w @skelia/docs",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "publish-packages": "npm run build && changeset publish"
+  },
+  "keywords": [
+    "skeleton",
+    "loader",
+    "placeholder",
+    "css",
+    "react",
+    "ui"
+  ],
+  "author": "",
+  "license": "MIT",
+  "description": "Cross-framework skeleton loading toolkit workspace.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasrul21/skelia.git"
+  },
+  "homepage": "https://github.com/nasrul21/skelia#readme",
+  "bugs": {
+    "url": "https://github.com/nasrul21/skelia/issues"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.31.0",
+    "prettier": "^3.8.4",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3"
+  }
+}

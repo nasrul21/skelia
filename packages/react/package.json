@@ -1,0 +1,54 @@
+{
+  "name": "@skelia/react",
+  "version": "0.1.0",
+  "description": "React components for the Skelia skeleton loading toolkit.",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "scripts": {
+    "dev": "npm run build -- --watch",
+    "build": "tsup src/index.tsx --format esm --dts && cp src/styles.css dist/styles.css",
+    "lint": "echo \"No lint yet\"",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "react": ">=18 <20"
+  },
+  "dependencies": {
+    "@skelia/core": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0"
+  },
+  "keywords": [
+    "skeleton",
+    "loader",
+    "placeholder",
+    "react",
+    "ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasrul21/skelia.git",
+    "directory": "packages/react"
+  },
+  "homepage": "https://github.com/nasrul21/skelia/tree/main/packages/react#readme",
+  "bugs": {
+    "url": "https://github.com/nasrul21/skelia/issues"
+  },
+  "license": "MIT"
+}

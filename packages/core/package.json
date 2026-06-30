@@ -1,0 +1,47 @@
+{
+  "name": "@skelia/core",
+  "version": "0.1.0",
+  "description": "CSS foundation for the Skelia cross-framework skeleton loading toolkit.",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "src",
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "style": "./dist/index.css",
+      "default": "./dist/index.css"
+    },
+    "./css": "./dist/index.css",
+    "./index.css": "./dist/index.css"
+  },
+  "scripts": {
+    "dev": "npm run build -- --watch",
+    "build": "mkdir -p dist && cp src/*.css dist/",
+    "lint": "echo \"No lint yet\"",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "skeleton",
+    "loader",
+    "placeholder",
+    "css",
+    "ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasrul21/skelia.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/nasrul21/skelia/tree/main/packages/core#readme",
+  "bugs": {
+    "url": "https://github.com/nasrul21/skelia/issues"
+  },
+  "license": "MIT"
+}
