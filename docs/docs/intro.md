@@ -8,46 +8,30 @@ slug: /intro
 Beautiful loading states for every interface.
 
 Skelia helps teams create consistent skeleton loading states across products,
-frameworks, and platforms. Use the lightweight CSS core for any web application
-that can load a stylesheet, or use the React package for typed components that
-compose the same design language.
+frameworks, and platforms. Use the lightweight CSS core directly, or use a
+framework package that composes the same primitives with typed components.
 
-The project is growing toward idiomatic framework packages for web and native
-apps, all based on the same loading design language.
+## Choose A Package
 
-## Ecosystem
+| Package | Use When | Start | API And Examples |
+| --- | --- | --- | --- |
+| `@skelia/core` | You want CSS primitives that work in any web app. | [Install Core](./core/installation.md) | [Usage](./core/usage.md), [Examples](./core/examples.md), [Theming](./core/theming.md) |
+| `@skelia/react` | You want typed React components over the core CSS system. | [Install React](./react/installation.md) | [Usage](./react/usage.md), [Components](./react/components.md), [Examples](./react/examples.md) |
+| `@skelia/vue` | You want typed Vue components over the core CSS system. | [Install Vue](./vue/installation.md) | [Usage](./vue/usage.md), [Components](./vue/components.md), [Examples](./vue/examples.md) |
 
-Skelia starts with `@skelia/core`, the web CSS package. `@skelia/react` adds a
-small typed component layer over those same primitives, so React apps can use
-native component composition without giving up the core utility classes.
+## Quick Start
 
-| Package                | Role                                               | Status             |
-| ---------------------- | -------------------------------------------------- | ------------------ |
-| `@skelia/core`         | CSS primitives, animations, layout, and sizing utilities | Available          |
-| `@skelia/react`        | React components for skeleton composition          | Available          |
-| `@skelia/vue`          | Vue components for skeleton composition            | Planned            |
-| `@skelia/svelte`       | Svelte components for skeleton composition         | Planned            |
-| `@skelia/react-native` | Native skeleton primitives for React Native        | Future exploration |
-| Flutter package        | Native skeleton primitives for Flutter             | Future exploration |
-
-The goal is simple: one consistent loading experience, whether the UI is built
-with CSS classes, framework components, or native views.
-
-## Start Here
-
-Install the CSS package:
+### Core CSS
 
 ```sh
 npm install @skelia/core
 ```
 
-Import the stylesheet from your application entry point:
-
 ```js
 import "@skelia/core/index.css";
 ```
 
-Or install the React package:
+### React
 
 ```sh
 npm install @skelia/react
@@ -58,18 +42,28 @@ import "@skelia/react/styles.css";
 import { Skeleton, SkeletonAvatar, SkeletonLine } from "@skelia/react";
 ```
 
-Then compose placeholders with a root wrapper, an animation, and the shape or
-layout classes that match the content being loaded.
+### Vue
 
-```html
-<div class="sk sk-shimmer" aria-hidden="true">
-  <div class="sk-row">
-    <div class="sk-avatar"></div>
-
-    <div class="sk-stack sk-flex-1">
-      <div class="sk-line sk-w-40"></div>
-      <div class="sk-line sk-w-70"></div>
-    </div>
-  </div>
-</div>
+```sh
+npm install @skelia/vue
 ```
+
+```ts
+import "@skelia/vue/styles.css";
+```
+
+```vue
+<script setup lang="ts">
+import { Skeleton, SkeletonAvatar, SkeletonLine } from "@skelia/vue";
+</script>
+```
+
+## Accessibility
+
+Skeletons are visual placeholders. Put `aria-busy="true"` on the loading
+region, add short loading text with `sk-sr-only`, and leave visual skeleton
+shapes hidden from assistive technology.
+
+- [Core accessibility](./core/accessibility.md)
+- [React accessibility](./react/accessibility.md)
+- [Vue accessibility](./vue/accessibility.md)
