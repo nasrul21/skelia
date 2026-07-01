@@ -26,6 +26,18 @@ const sidebars = {
         "react/accessibility",
       ],
     },
+    {
+      type: "category",
+      label: "Vue",
+      collapsed: false,
+      items: [
+        "vue/installation",
+        "vue/usage",
+        "vue/components",
+        "vue/examples",
+        "vue/accessibility",
+      ],
+    },
     "development",
   ],
 };

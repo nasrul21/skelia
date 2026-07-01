@@ -14,10 +14,12 @@
     "@mdx-js/react": "^3.1.0",
     "@skelia/core": "file:../packages/core",
     "@skelia/react": "file:../packages/react",
+    "@skelia/vue": "file:../packages/vue",
     "clsx": "^2.1.1",
     "prism-react-renderer": "^2.4.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "vue": "^3.5.0"
   },
   "devDependencies": {
     "typescript": "^6.0.3"

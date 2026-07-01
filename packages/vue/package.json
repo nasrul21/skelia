@@ -1,0 +1,54 @@
+{
+  "name": "@skelia/vue",
+  "version": "0.1.0",
+  "description": "Vue components for the Skelia skeleton loading toolkit.",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "scripts": {
+    "dev": "npm run build -- --watch",
+    "build": "tsup src/index.ts --format esm --dts --external vue && cp src/styles.css dist/styles.css",
+    "lint": "echo \"No lint yet\"",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.0 || ^3.5.0"
+  },
+  "dependencies": {
+    "@skelia/core": "^0.1.0"
+  },
+  "devDependencies": {
+    "vue": "^3.5.0"
+  },
+  "keywords": [
+    "skeleton",
+    "loader",
+    "placeholder",
+    "vue",
+    "ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasrul21/skelia.git",
+    "directory": "packages/vue"
+  },
+  "homepage": "https://github.com/nasrul21/skelia/tree/main/packages/vue#readme",
+  "bugs": {
+    "url": "https://github.com/nasrul21/skelia/issues"
+  },
+  "license": "MIT"
+}

@@ -75,6 +75,10 @@ const config = {
               label: "React",
               to: "/docs/react/installation",
             },
+            {
+              label: "Vue",
+              to: "/docs/vue/installation",
+            },
           ],
         },
         {
@@ -87,6 +91,10 @@ const config = {
             {
               label: "@skelia/react",
               href: "https://www.npmjs.com/package/@skelia/react",
+            },
+            {
+              label: "@skelia/vue",
+              href: "https://www.npmjs.com/package/@skelia/vue",
             },
           ],
         },

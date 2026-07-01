@@ -209,8 +209,8 @@ export default function Home() {
               <p className="section-eyebrow">Package docs</p>
               <h2 id="package-title">Choose your package</h2>
               <p>
-                Start with the CSS foundation or use the React component layer
-                built on top of the same primitives.
+                Start with the CSS foundation or use a framework component
+                layer built on top of the same primitives.
               </p>
             </div>
 
@@ -229,9 +229,9 @@ export default function Home() {
               />
               <PackageLink
                 name="@skelia/vue"
-                description="Planned Vue components for skeleton composition."
+                description="Typed Vue components powered by the core CSS system."
                 icon={<VueLogo />}
-                disabled
+                to="/docs/vue/installation"
               />
               <PackageLink
                 name="@skelia/svelte"
