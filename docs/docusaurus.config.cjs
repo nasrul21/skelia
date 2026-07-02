@@ -3,6 +3,7 @@ const config = {
   tagline: "Beautiful loading states for every interface.",
   url: "https://skelia.dev",
   baseUrl: "/",
+  favicon: "logo.png",
 
   organizationName: "skelia",
   projectName: "skelia",

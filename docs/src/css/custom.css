@@ -19,6 +19,9 @@
   --sk-docs-panel-soft: #f2f5f9;
   --sk-docs-border: #d9dee8;
   --sk-docs-muted: #5b6472;
+  --sk-docs-hero-bg: #ffffff;
+  --sk-docs-feature-bg: #f6f8fb;
+  --sk-docs-package-bg: var(--sk-docs-hero-bg);
 }
 
 [data-theme="dark"] {
@@ -33,6 +36,9 @@
   --sk-docs-panel-soft: #172033;
   --sk-docs-border: #263249;
   --sk-docs-muted: #cbd5e1;
+  --sk-docs-hero-bg: #0b1120;
+  --sk-docs-feature-bg: #111827;
+  --sk-docs-package-bg: var(--sk-docs-hero-bg);
 }
 
 html {
@@ -41,6 +47,26 @@ html {
 
 .navbar__brand {
   font-weight: 800;
+}
+
+[data-theme="dark"] .navbar {
+  border-bottom: 1px solid var(--sk-docs-border);
+  background: #0b1120;
+}
+
+[data-theme="dark"] .navbar__brand,
+[data-theme="dark"] .navbar__link {
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .navbar__link:hover,
+[data-theme="dark"] .navbar__link--active {
+  color: var(--ifm-color-primary-light);
+}
+
+[data-theme="dark"] .navbar__toggle,
+[data-theme="dark"] .clean-btn {
+  color: #e5e7eb;
 }
 
 .navbar__logo {
@@ -65,6 +91,80 @@ html {
   display: none !important;
 }
 
+.footer {
+  border-top: 1px solid var(--sk-docs-border);
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  color: #334155;
+  line-height: 1.7;
+}
+
+.footer .container {
+  display: grid;
+  gap: 18px;
+}
+
+.footer__links {
+  margin-bottom: 0;
+}
+
+.footer__title,
+.footer__copyright {
+  color: #0f172a;
+}
+
+.footer__title {
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.footer__link-item {
+  display: inline-flex;
+  align-items: center;
+  color: #475569;
+  font-weight: 650;
+  line-height: 1.7;
+  text-decoration: none;
+  transition:
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-color-primary-dark);
+  text-decoration: none;
+  transform: translateX(2px);
+}
+
+.footer__copyright {
+  padding-top: 18px;
+  border-top: 1px solid var(--sk-docs-border);
+  margin-top: 18px;
+  line-height: 1.7;
+}
+
+[data-theme="dark"] .footer {
+  background:
+    linear-gradient(180deg, #111827 0%, #0b1120 100%);
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .footer__title,
+[data-theme="dark"] .footer__copyright {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .footer__link-item {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .footer__link-item:hover {
+  color: var(--ifm-color-primary-light);
+}
+
 .hero-home {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
@@ -72,6 +172,9 @@ html {
   gap: 36px;
   min-height: min(620px, calc(100vh - var(--ifm-navbar-height)));
   padding: 48px 0 76px;
+  background: var(--sk-docs-hero-bg);
+  box-shadow: 0 0 0 100vmax var(--sk-docs-hero-bg);
+  clip-path: inset(0 -100vmax);
 }
 
 .hero-home__eyebrow {
@@ -116,23 +219,25 @@ html {
 
 .package-link-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
+  margin-top: 24px;
 }
 
 .package-section {
-  display: grid;
-  grid-template-columns: minmax(240px, 0.72fr) minmax(0, 1.28fr);
-  align-items: start;
-  gap: 28px;
-  padding: 0 0 52px;
+  padding: 60px 0 64px;
+  background: var(--sk-docs-package-bg);
+  box-shadow: 0 0 0 100vmax var(--sk-docs-package-bg);
+  clip-path: inset(0 -100vmax);
+  text-align: center;
 }
 
 .section-eyebrow {
-  margin: 0 0 8px;
+  margin: 0 0 10px;
   color: var(--ifm-color-primary-dark);
   font-size: 13px;
   font-weight: 800;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -140,15 +245,19 @@ html {
   color: var(--ifm-color-primary-light);
 }
 
-.package-section h2 {
+.section-header {
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.section-header h2 {
   margin: 0;
   font-size: 32px;
   line-height: 1.1;
 }
 
-.package-section p:not(.section-eyebrow) {
-  max-width: 520px;
-  margin: 12px 0 0;
+.section-header p:not(.section-eyebrow) {
+  margin: 12px auto 0;
   color: var(--ifm-color-emphasis-700);
   line-height: 1.65;
 }
@@ -164,6 +273,7 @@ html {
   border-radius: 8px;
   background: var(--sk-docs-panel);
   color: inherit;
+  text-align: left;
   text-decoration: none;
   transition:
     border-color 160ms ease,
@@ -323,11 +433,17 @@ html {
   gap: 16px;
 }
 
+.feature-section {
+  padding: 64px 0 72px;
+  background: var(--sk-docs-feature-bg);
+  box-shadow: 0 0 0 100vmax var(--sk-docs-feature-bg);
+  clip-path: inset(0 -100vmax);
+}
+
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
-  padding: 8px 0 72px;
 }
 
 .feature-card {

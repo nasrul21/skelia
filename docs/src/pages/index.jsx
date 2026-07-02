@@ -3,6 +3,8 @@ import Link from "@docusaurus/Link";
 import Layout from "@theme/Layout";
 import {
   CssLogo,
+  FlutterLogo,
+  ReactNativeLogo,
   ReactLogo,
   SvelteLogo,
   VueLogo,
@@ -189,23 +191,30 @@ export default function Home() {
             <Preview />
           </section>
 
-          <section className="feature-grid" aria-label="Skelia features">
-            <Feature title="CSS first" icon="css">
-              Import one stylesheet and compose accessible placeholders with
-              primitives, utilities, and animations.
-            </Feature>
-            <Feature title="Framework ready" icon="framework">
-              Skelia starts with core CSS and is structured to grow into
-              idiomatic React, Vue, Svelte, and native packages.
-            </Feature>
-            <Feature title="Token driven" icon="tokens">
-              Customize colors, radius, animation timing, spacing, and borders
-              with CSS custom properties.
-            </Feature>
+          <section className="feature-section" aria-labelledby="feature-title">
+            <div className="section-header">
+              <p className="section-eyebrow">Why Skelia</p>
+              <h2 id="feature-title">Built for consistent loading states</h2>
+            </div>
+
+            <div className="feature-grid">
+              <Feature title="CSS first" icon="css">
+                Import one stylesheet and compose accessible placeholders with
+                primitives, utilities, and animations.
+              </Feature>
+              <Feature title="Framework ready" icon="framework">
+                Skelia starts with core CSS and is structured to grow into
+                idiomatic React, Vue, Svelte, and native packages.
+              </Feature>
+              <Feature title="Token driven" icon="tokens">
+                Customize colors, radius, animation timing, spacing, and borders
+                with CSS custom properties.
+              </Feature>
+            </div>
           </section>
 
           <section className="package-section" aria-labelledby="package-title">
-            <div>
+            <div className="section-header">
               <p className="section-eyebrow">Package docs</p>
               <h2 id="package-title">Choose your package</h2>
               <p>
@@ -237,6 +246,18 @@ export default function Home() {
                 name="@skelia/svelte"
                 description="Planned Svelte components for skeleton composition."
                 icon={<SvelteLogo />}
+                disabled
+              />
+              <PackageLink
+                name="@skelia/react-native"
+                description="Planned React Native primitives for native loading states."
+                icon={<ReactNativeLogo />}
+                disabled
+              />
+              <PackageLink
+                name="@skelia/flutter"
+                description="Planned Flutter widgets for native loading states."
+                icon={<FlutterLogo />}
                 disabled
               />
             </div>
