@@ -1,0 +1,57 @@
+{
+  "name": "@skelia/svelte",
+  "version": "0.1.0",
+  "description": "Svelte components for the Skelia skeleton loading toolkit.",
+  "type": "module",
+  "svelte": "./dist/index.js",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "svelte": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "scripts": {
+    "dev": "npm run build -- --watch",
+    "build": "svelte-package && cp src/styles.css dist/styles.css",
+    "lint": "echo \"No lint yet\"",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "svelte": "^5.0.0"
+  },
+  "dependencies": {
+    "@skelia/core": "^0.1.0"
+  },
+  "devDependencies": {
+    "@sveltejs/package": "^2.5.0",
+    "svelte": "^5.0.0"
+  },
+  "keywords": [
+    "skeleton",
+    "loader",
+    "placeholder",
+    "svelte",
+    "ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasrul21/skelia.git",
+    "directory": "packages/svelte"
+  },
+  "homepage": "https://github.com/nasrul21/skelia/tree/main/packages/svelte#readme",
+  "bugs": {
+    "url": "https://github.com/nasrul21/skelia/issues"
+  },
+  "license": "MIT"
+}
