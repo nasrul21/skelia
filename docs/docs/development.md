@@ -44,5 +44,9 @@ packages/core/src/utilities.css  Layout and sizing utilities
 packages/core/src/index.css      Main stylesheet entry
 packages/react/src/index.tsx     React component exports
 packages/react/src/styles.css    React stylesheet entry
+packages/vue/src/index.ts        Vue component exports
+packages/vue/src/styles.css      Vue stylesheet entry
+packages/svelte/src/lib/         Svelte component exports
+packages/svelte/src/styles.css   Svelte stylesheet entry
 docs/                           Docusaurus documentation site
 ```

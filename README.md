@@ -13,7 +13,7 @@ framework package that composes the same primitives with typed components.
 | `@skelia/core` | CSS primitives, animations, layout, sizing, and accessibility helpers | Available | [packages/core](./packages/core/README.md) | [Core docs](./docs/docs/core/installation.md) |
 | `@skelia/react` | React components powered by the core CSS system | Available | [packages/react](./packages/react/README.md) | [React docs](./docs/docs/react/installation.md) |
 | `@skelia/vue` | Vue components powered by the core CSS system | Available | [packages/vue](./packages/vue/README.md) | [Vue docs](./docs/docs/vue/installation.md) |
-| `@skelia/svelte` | Svelte components for skeleton composition | Planned | - | - |
+| `@skelia/svelte` | Svelte components powered by the core CSS system | Available | [packages/svelte](./packages/svelte/README.md) | [Svelte docs](./docs/docs/svelte/installation.md) |
 | `@skelia/react-native` | Native skeleton primitives for React Native | Future exploration | - | - |
 | Flutter package | Native skeleton primitives for Flutter | Future exploration | - | - |
 
@@ -30,6 +30,9 @@ npm install @skelia/react
 
 # Vue
 npm install @skelia/vue
+
+# Svelte
+npm install @skelia/svelte
 ```
 
 Import one stylesheet from your application entry point:
@@ -49,6 +52,11 @@ import "@skelia/react/styles.css";
 import "@skelia/vue/styles.css";
 ```
 
+```ts
+// Svelte
+import "@skelia/svelte/styles.css";
+```
+
 For complete installation, usage, component, styling, and accessibility details,
 open the package README or docs page from the table above.
 
@@ -58,6 +66,7 @@ open the package README or docs page from the table above.
 packages/core/   CSS foundation
 packages/react/  React component package
 packages/vue/    Vue component package
+packages/svelte/ Svelte component package
 docs/            Docusaurus documentation site
 ```
 
