@@ -168,8 +168,8 @@ export default function Home() {
               <p className="hero-home__copy">
                 Build polished loading states that feel consistent across
                 products, frameworks, and platforms. Start with the lightweight
-                CSS core, then use the same loading language as Skelia grows
-                into framework and native packages.
+                CSS core, then use the same loading language across React, Vue,
+                and Svelte component packages.
               </p>
 
               <div className="hero-home__actions">
@@ -203,8 +203,8 @@ export default function Home() {
                 primitives, utilities, and animations.
               </Feature>
               <Feature title="Framework ready" icon="framework">
-                Skelia starts with core CSS and is structured to grow into
-                idiomatic React, Vue, Svelte, and native packages.
+                Skelia starts with core CSS and includes idiomatic React, Vue,
+                and Svelte component packages.
               </Feature>
               <Feature title="Token driven" icon="tokens">
                 Customize colors, radius, animation timing, spacing, and borders
@@ -244,9 +244,9 @@ export default function Home() {
               />
               <PackageLink
                 name="@skelia/svelte"
-                description="Planned Svelte components for skeleton composition."
+                description="Typed Svelte components powered by the core CSS system."
                 icon={<SvelteLogo />}
-                disabled
+                to="/docs/svelte/installation"
               />
               <PackageLink
                 name="@skelia/react-native"

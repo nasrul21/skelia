@@ -1,6 +1,6 @@
 ---
 title: Skelia Skeleton Loading Toolkit
-description: Get started with Skelia, a cross-framework skeleton loading toolkit for CSS, React, and Vue loading states.
+description: Get started with Skelia, a cross-framework skeleton loading toolkit for CSS, React, Vue, and Svelte loading states.
 slug: /intro
 ---
 
@@ -19,6 +19,7 @@ framework package that composes the same primitives with typed components.
 | `@skelia/core` | You want CSS primitives that work in any web app. | [Install Core](./core/installation.md) | [Usage](./core/usage.md), [Examples](./core/examples.md), [Theming](./core/theming.md) |
 | `@skelia/react` | You want typed React components over the core CSS system. | [Install React](./react/installation.md) | [Usage](./react/usage.md), [Components](./react/components.md), [Examples](./react/examples.md) |
 | `@skelia/vue` | You want typed Vue components over the core CSS system. | [Install Vue](./vue/installation.md) | [Usage](./vue/usage.md), [Components](./vue/components.md), [Examples](./vue/examples.md) |
+| `@skelia/svelte` | You want typed Svelte components over the core CSS system. | [Install Svelte](./svelte/installation.md) | [Usage](./svelte/usage.md), [Components](./svelte/components.md), [Examples](./svelte/examples.md) |
 
 ## Quick Start
 
@@ -59,6 +60,19 @@ import { Skeleton, SkeletonAvatar, SkeletonLine } from "@skelia/vue";
 </script>
 ```
 
+### Svelte
+
+```sh
+npm install @skelia/svelte
+```
+
+```svelte
+<script lang="ts">
+  import "@skelia/svelte/styles.css";
+  import { Skeleton, SkeletonAvatar, SkeletonLine } from "@skelia/svelte";
+</script>
+```
+
 ## Accessibility
 
 Skeletons are visual placeholders. Put `aria-busy="true"` on the loading
@@ -68,3 +82,4 @@ shapes hidden from assistive technology.
 - [Core accessibility](./core/accessibility.md)
 - [React accessibility](./react/accessibility.md)
 - [Vue accessibility](./vue/accessibility.md)
+- [Svelte accessibility](./svelte/accessibility.md)

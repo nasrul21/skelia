@@ -38,6 +38,18 @@ const sidebars = {
         "vue/accessibility",
       ],
     },
+    {
+      type: "category",
+      label: "Svelte",
+      collapsed: false,
+      items: [
+        "svelte/installation",
+        "svelte/usage",
+        "svelte/components",
+        "svelte/examples",
+        "svelte/accessibility",
+      ],
+    },
     "development",
   ],
 };

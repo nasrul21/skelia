@@ -1,6 +1,6 @@
 const config = {
   title: "Skelia",
-  tagline: "Skeleton loading components for CSS, React, and Vue.",
+  tagline: "Skeleton loading components for CSS, React, Vue, and Svelte.",
   url: "https://skelia-ui.vercel.app",
   baseUrl: "/",
   favicon: "logo.png",
@@ -43,12 +43,12 @@ const config = {
       {
         name: "description",
         content:
-          "Skelia is a cross-framework skeleton loading toolkit for building accessible loading states with CSS, React, and Vue.",
+          "Skelia is a cross-framework skeleton loading toolkit for building accessible loading states with CSS, React, Vue, and Svelte.",
       },
       {
         name: "keywords",
         content:
-          "skeleton loading, skeleton loader, skeleton UI, React skeleton, Vue skeleton, CSS skeleton, loading states, accessible skeleton UI",
+          "skeleton loading, skeleton loader, skeleton UI, React skeleton, Vue skeleton, Svelte skeleton, CSS skeleton, loading states, accessible skeleton UI",
       },
       {
         property: "og:type",
@@ -105,6 +105,10 @@ const config = {
               label: "Vue",
               to: "/docs/vue/installation",
             },
+            {
+              label: "Svelte",
+              to: "/docs/svelte/installation",
+            },
           ],
         },
         {
@@ -121,6 +125,10 @@ const config = {
             {
               label: "@skelia/vue",
               href: "https://www.npmjs.com/package/@skelia/vue",
+            },
+            {
+              label: "@skelia/svelte",
+              href: "https://www.npmjs.com/package/@skelia/svelte",
             },
           ],
         },
