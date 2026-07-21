@@ -1,5 +1,6 @@
 ---
-title: Usage
+title: React Skeleton Loading Usage
+description: Learn how to compose accessible React skeleton loading states with Skelia components and core utility classes.
 ---
 
 # React Usage

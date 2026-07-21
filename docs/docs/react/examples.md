@@ -1,5 +1,6 @@
 ---
-title: Examples
+title: React Skeleton Loading Examples
+description: Browse practical React skeleton loading examples using Skelia components for profiles, article cards, and dashboards.
 ---
 
 # React Examples

@@ -1,5 +1,6 @@
 ---
-title: Components
+title: Vue Skeleton Loading Components
+description: Use Skelia Vue components for skeleton lines, boxes, circles, avatars, wrappers, animations, and loading placeholders.
 ---
 
 # Vue Components

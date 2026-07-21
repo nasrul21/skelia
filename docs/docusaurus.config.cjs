@@ -1,7 +1,7 @@
 const config = {
   title: "Skelia",
-  tagline: "Beautiful loading states for every interface.",
-  url: "https://skelia.dev",
+  tagline: "Skeleton loading components for CSS, React, and Vue.",
+  url: "https://skelia-ui.vercel.app",
   baseUrl: "/",
   favicon: "logo.png",
 
@@ -38,6 +38,31 @@ const config = {
   ],
 
   themeConfig: {
+    image: "logo.png",
+    metadata: [
+      {
+        name: "description",
+        content:
+          "Skelia is a cross-framework skeleton loading toolkit for building accessible loading states with CSS, React, and Vue.",
+      },
+      {
+        name: "keywords",
+        content:
+          "skeleton loading, skeleton loader, skeleton UI, React skeleton, Vue skeleton, CSS skeleton, loading states, accessible skeleton UI",
+      },
+      {
+        property: "og:type",
+        content: "website",
+      },
+      {
+        property: "og:site_name",
+        content: "Skelia",
+      },
+      {
+        name: "twitter:card",
+        content: "summary",
+      },
+    ],
     navbar: {
       title: "Skelia",
       logo: {

@@ -1,5 +1,6 @@
 ---
-title: Accessibility
+title: Accessible Vue Skeleton Loading
+description: Build accessible Vue skeleton loading states with Skelia using aria-busy, aria-live, and hidden decorative placeholders.
 ---
 
 # Vue Accessibility

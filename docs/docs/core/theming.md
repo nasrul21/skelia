@@ -1,5 +1,6 @@
 ---
-title: Theming
+title: CSS Skeleton Loading Theming
+description: Customize Skelia skeleton loading colors, radius, spacing, borders, and animation timing with CSS custom properties.
 ---
 
 # Theming

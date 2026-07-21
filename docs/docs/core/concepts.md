@@ -1,5 +1,6 @@
 ---
-title: Concepts
+title: Core CSS Skeleton Concepts
+description: Understand Skelia core concepts including wrappers, animations, primitives, layout utilities, sizing, and design tokens.
 ---
 
 # Concepts

@@ -1,5 +1,6 @@
 ---
-title: Usage
+title: CSS Skeleton Loading Usage
+description: Learn how to compose accessible skeleton loading states with Skelia core CSS primitives, animations, and utilities.
 ---
 
 # Usage

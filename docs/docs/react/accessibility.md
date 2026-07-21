@@ -1,5 +1,6 @@
 ---
-title: Accessibility
+title: Accessible React Skeleton Loading
+description: Build accessible React skeleton loading states with Skelia using aria-busy, aria-live, and hidden decorative placeholders.
 ---
 
 # React Accessibility

@@ -1,5 +1,6 @@
 ---
-title: Installation
+title: CSS Skeleton Loading Installation
+description: Install @skelia/core and import the CSS stylesheet for skeleton loading primitives in any web app.
 ---
 
 # Installation

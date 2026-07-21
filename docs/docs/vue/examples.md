@@ -1,5 +1,6 @@
 ---
-title: Examples
+title: Vue Skeleton Loading Examples
+description: Browse practical Vue skeleton loading examples using Skelia components for profiles, article cards, and dashboards.
 ---
 
 # Vue Examples

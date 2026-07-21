@@ -1,5 +1,6 @@
 ---
-title: Accessibility
+title: Accessible CSS Skeleton Loading
+description: Build accessible skeleton loading states with Skelia core CSS using aria-busy, screen reader text, and decorative placeholders.
 ---
 
 # Accessibility

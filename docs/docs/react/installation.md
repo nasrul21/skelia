@@ -1,5 +1,6 @@
 ---
-title: Installation
+title: React Skeleton Loading Installation
+description: Install @skelia/react, import its styles, and set up React skeleton loading components in your app.
 ---
 
 # React Installation

@@ -1,5 +1,6 @@
 ---
-title: Components
+title: React Skeleton Loading Components
+description: Use Skelia React components for skeleton lines, boxes, circles, avatars, wrappers, animations, and loading placeholders.
 ---
 
 # React Components

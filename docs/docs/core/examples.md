@@ -1,5 +1,6 @@
 ---
-title: Examples
+title: CSS Skeleton Loading Examples
+description: Browse practical Skelia core CSS examples for article cards, profile rows, dashboards, and other loading states.
 ---
 
 # Composition Examples

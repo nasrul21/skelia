@@ -1,5 +1,6 @@
 ---
-title: Introduction
+title: Skelia Skeleton Loading Toolkit
+description: Get started with Skelia, a cross-framework skeleton loading toolkit for CSS, React, and Vue loading states.
 slug: /intro
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Local Development
+description: Set up the Skelia repository locally, build packages, run tests, and start the documentation site.
 ---
 
 # Local Development

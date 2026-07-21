@@ -1,5 +1,6 @@
 ---
-title: Usage
+title: Vue Skeleton Loading Usage
+description: Learn how to compose accessible Vue skeleton loading states with Skelia components and core utility classes.
 ---
 
 # Vue Usage

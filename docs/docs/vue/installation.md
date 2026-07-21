@@ -1,5 +1,6 @@
 ---
-title: Installation
+title: Vue Skeleton Loading Installation
+description: Install @skelia/vue, import its styles, and set up Vue skeleton loading components in your app.
 ---
 
 # Vue Installation
